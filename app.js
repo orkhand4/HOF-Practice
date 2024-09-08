@@ -28,6 +28,16 @@ const workers = [
 // const ogru = workers.find(worker => worker.id == 3)
 // console.log(`Ogru: ${ogru.fullName}`);
 
-const totalSalaries = workers.reduce((acc,item)=> acc+item.salary ,0)
-console.log(totalSalaries);
+// const totalSalaries = workers.reduce((acc,item)=> acc+item.salary ,0)
+// console.log(totalSalaries);
+
+// ishchilerden evli olanlari tapin ve onlarin console-a fullName ve maashlarini goster
+
+const marriedWorkers = workers.filter(item => item.isMarry==true);
+marriedWorkers.map(item=>console.log(
+  `Worker name: ${item.fullName}\nWorker salary: ${item.salary}`
+))
+
+
+
 
