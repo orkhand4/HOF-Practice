@@ -25,6 +25,9 @@ const workers = [
 // const richWorkers = workers.filter((item) => item.salary > 4000);
 // console.log(richWorkers);
 
-const ogru = workers.find(worker => worker.id == 3)
-console.log(`Ogru: ${ogru.fullName}`);
+// const ogru = workers.find(worker => worker.id == 3)
+// console.log(`Ogru: ${ogru.fullName}`);
+
+const totalSalaries = workers.reduce((acc,item)=> acc+item.salary ,0)
+console.log(totalSalaries);
 
