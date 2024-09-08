@@ -19,6 +19,7 @@ const workers = [
   }
 ];
 
-workers.map(item=>console.log(item.salary)
-)
+const richWorkers = workers.filter(item=>item.salary>4000)
+console.log(richWorkers);
+
 
